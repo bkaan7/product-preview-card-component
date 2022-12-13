@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 0px auto;
+  margin-top: 10px;
+  border-radius: 12px 12px 12px 12px;
+}
+
+.image-section {
+  width: 400px;
+  height: 200px;
+  background-image: url(images/image-product-mobile.jpg);
+  background-size: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.perfume {
+  letter-spacing: 6px;
+  font-family: Montserrat;
+  font-weight: 100;
+  font-size: 13px;
+}
+
+.baslik {
+  font-family: Fraunces;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.text {
+  font-family: Montserrat;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.fiyat1 {
+  color: hsl(158, 36%, 37%);
+  font-family: Montserrat;
+  font-size: 30px;
+}
+
+.fiyat2 {
+  color: hsl(158, 36%, 37%);
+  font-family: Montserrat;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.btn {
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 7px;
+  color: #fff;
+  width: 300px;
+  border: none;
+  align-items: center;
+  text-align: center;
+  margin-top: 17px;
+  padding: 10px;
+  line-height: 20px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: hsl(159, 45%, 18%);
+}
+
+.attribution {
+  margin-top: 59px;
+}
+
+.secondary {
+  padding: 40px;
+}
+
+@media screen and (min-width: 706px) {
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: hsl(30, 38%, 92%);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 680px;
+    height: 450px;
+  }
+  .image-section {
+    width: 350px;
+    height: auto;
+    background-image: url(images/image-product-desktop.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 12px 0 0px 12px;
+  }
+  .secondary {
+    padding: 40px;
+    width: 350px;
+    height: 370px;
+  }
+}
